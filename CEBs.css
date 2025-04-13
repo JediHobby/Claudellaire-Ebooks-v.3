@@ -1,0 +1,2148 @@
+body{
+    font-family: 'Manrope', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    background-position: center;
+    background-color: black;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    box-sizing: inherit;
+          
+}
+
+
+h1 {
+    color: white;
+}
+
+h2 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 3rem;
+    line-height: 4rem;
+    color: white;
+}
+
+h3 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+    color: white;
+}
+
+p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.7rem;
+    color: white;
+    line-height: 2rem;
+}
+
+h4 {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.6rem;
+    color: white;   
+    line-height: 2rem;   
+}
+
+li {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.6rem;
+    color: white;
+    padding: 1.2rem;
+}
+
+
+
+.centerzero {
+    margin-left: 0%;
+}
+
+
+
+/* Header */
+.menu01 {
+    display: block;
+}
+
+.menu02 {
+    display: none; 
+    z-index: 101;  
+}
+
+.menu02 #menulist {
+    display: block; 
+    z-index: 101;
+}
+
+.menu02 #menulistx {
+    display: none;
+    z-index: 150;
+}
+
+.menu02 .menulist {
+    margin-top: 35px;
+    scale: 300%;
+    flex-grow: 5;
+    margin-right: 5%;
+    right: 0;
+    position: absolute;
+    margin-right: 65px;    
+}
+
+.menu02 .menulistx {
+    margin-top: 35px;
+    scale: 300%;
+    flex-grow: 5;
+    position: absolute;
+    right: 0;
+    margin-right: 65px;   
+}
+
+.menu02 .fbox2 {
+    width: 50%;
+    flex-shrink: 100;
+}
+
+#ulmenu {
+    display: none;    
+}
+
+.ulmenu #ulm{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    top: 0;
+    z-index: 9;
+    position: fixed;
+    background-color: black; 
+    text-align: center;
+    padding: 0; 
+    width: 100%;
+    height: 150%;
+    margin-top: 1rem; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.select {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-top: 3rem;
+}
+
+.select > div {
+    margin-bottom: -.5rem;
+    padding: 0;
+}
+
+.mlist {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-left: 6rem;
+}
+
+.mlist > div {
+    margin-right: 3rem;
+    margin-bottom: 2.5rem;
+    
+}
+
+.flex {
+    display: flex;  
+    margin-left: auto;
+    margin-right: auto;
+    background-color: black;
+    z-index: 10;
+    min-width: fit-content;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    flex-wrap: wrap;
+}
+
+.flex > div {
+    margin: 0rem 5rem 0rem 0rem;
+    color: white;
+    min-width: .01rem;
+    flex-shrink: 5;   
+}
+
+.flex .imgbox {
+       top: 0;
+       margin-left: 5%;
+}
+
+.flex .fbox1{
+    width: 25%;
+    flex-shrink: 10 ;
+}
+
+.flex .sel {
+    margin-top: 10px;
+    resize: both;     
+}
+
+.flex .icon .wattpadicon {
+    color: #ffffff;
+    scale: 10%;
+}
+
+.flex .icon {
+    margin-top: 30px;
+    transition: transform .2s;
+}
+
+.flex .icon:hover {
+    transform: scale(1.5);
+}
+
+.fa-facebook:hover {
+    color: fuchsia !important;
+}
+
+.fa-instagram:hover {
+    color: fuchsia !important;
+}
+
+.fa-tiktok:hover {
+    color: fuchsia !important;
+}
+
+.fa-x-twitter:hover {
+    color: fuchsia !important;
+}
+
+.fa-patreon:hover {
+    color: fuchsia !important; 
+}
+
+.wattpadicon:hover {
+    color: fuchsia !important; 
+}
+
+a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+a:link {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: fuchsia;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.menulist:hover {
+    color: fuchsia !important;
+}
+
+.menulistx:hover {
+    color: fuchsia !important;
+}
+
+/* Slideshow Animation */
+.slideshow {
+    margin-top: 8rem;
+    position: relative;
+    text-align: center;                      
+}
+
+.slidepic {
+    display:none;
+    inset: 0;
+    padding: 0; 
+    z-index: -2;     
+}
+
+.slideshow .images {
+    border: none;
+    z-index: -1;
+    max-width: 75%; 
+    max-height: 75%;
+    border-radius: 10px;
+   
+}
+
+.slideshow .image {
+    border: none; 
+    z-index: -2;
+    max-width: 75%; 
+    max-height: 75%;
+    border-radius: 10px;      
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 3s;
+}
+
+@keyframes fade {
+    0% {opacity: .3;}
+    100% {opacity: 1;}    
+}
+
+/* Book Category */
+.bookcategories {
+    margin-top: 10%;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+     
+}
+
+.bookcategories .Hpic .ceb2pic{
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    height: 0%;
+    border-radius: 10px;
+}
+
+.bookcategories .welcome {
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    max-width: 85rem;    
+}
+
+.bookcategories .welcome .wflex{
+    width: 15rem;
+    flex-shrink: 15;
+}
+
+.bookcategories .ul {
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    max-width: 85rem;
+    flex-direction: column; 
+}
+
+
+.bookcategories .ul .genre {
+    list-style-type: none;  
+    position: relative;     
+}
+
+
+/* Young Adult Category */
+.yaheader {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+}
+
+.youngadultlib01 {
+    margin-top: 100px; 
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    
+    
+}
+
+.youngadultlib01 .yapiclib01 {
+    transition: transform .2s;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 1%;
+        
+}
+
+.youngadultlib01 .yapiclib01:hover {
+    transform: scale(1.1);   
+}
+
+.youngadultlib02 {
+    margin-top: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    
+}
+
+
+.youngadultlib02 .yapiclib02 {
+    transition: transform .2s;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 1%;
+    padding-top: 1%;
+    border-radius: 1px;    
+}
+
+.youngadultlib02 .yapiclib02:hover {
+    transform: scale(1.1);   
+}
+
+.youngadultlib01 .yapiclib01 .picceb02 {
+    border-radius: 10px;
+}
+
+.youngadultlib02 .yapiclib02 .picceb02 {
+    border-radius: 10px;
+}
+
+/* Individual Books */
+.youngadult{
+    display: flex;
+    flex-direction: column;
+    min-width: fit-content;
+    margin-top: 10rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.youngadult .yapic {
+    transition: transform .2s;
+    display: block;
+    text-align: center;
+    margin-left: auto; 
+    margin-right: auto;     
+}
+
+.youngadult .yapic:hover {
+    transform: scale(1.1);    
+}
+
+.youngadult .yapic .yaphoto{
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+}
+
+.youngadult .yoflex{
+    display: flex; 
+}
+
+.youngadult .yoflex .yobox{
+    min-width: 0.01rem;   
+}
+
+.youngadult .bookinfo {
+    padding: 0px;
+    text-align: center;      
+}
+
+.youngadult .lang {
+    margin-bottom: 25px;
+}
+
+.youngadult .Pform {
+    transform: trasform .2s;
+    border-radius: 5px;
+}
+
+.youngadult .Pform:hover {
+    transform: scale(1.1);
+}
+
+.bookreturn {
+    text-align: center;
+    margin-top: 20%;
+}
+
+.youngadult .yoflex .text {
+    margin-left: auto; 
+    margin-right: auto;
+    flex-grow: 2;
+    max-width: 85rem;
+          
+}
+
+.werewolf {
+    display: flex;
+    flex-direction: column;
+    min-width: fit-content;
+    margin-top: 10rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.werewolf .wepic {
+    transition: transform .2s;
+    display: block;
+    text-align: center;
+    margin-left: auto;  
+    margin-right: auto; 
+}
+
+.werewolf .wepic .wephoto{
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+}
+
+.werewolf .weflex{
+    display: flex;
+}
+
+.werewolf .weflex .text {
+    margin-left: auto; 
+    margin-right: auto; 
+    flex-grow: 2;
+    max-width: 85rem;          
+}
+
+
+.werewolf .weflex .webox{
+    opacity: 0px;
+}
+
+.werewolf .wepic:hover {
+    transform: scale(1.1);
+}
+
+.werewolf .bookinfo {
+    text-align: center;
+    padding: 0; 
+}
+
+.werewolf .lang {
+    margin-bottom: 25px;
+}
+
+.werewolf .Pform {
+    transform: trasform .2s;
+    border-radius: 5px;
+}
+
+.werewolf .Pform:hover {
+    transform: scale(1.1);
+}
+
+/* Links */
+#yalink {
+    opacity: 0;
+    margin-top: 650px;
+}
+
+#welink {
+    opacity: 0;
+    margin-top: 650px;
+}
+
+#backlink {
+    margin-top: 1%;
+    text-align: center;
+    width: 100%;
+    height: auto;
+}
+
+.backlink {
+    text-align: center;
+    margin-top: 100px;  
+}
+
+/* Werewolf Category */
+.weheader {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.werewolflib01 {
+    margin-top: 5rem;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+   
+}
+
+.werewolflib01 .wepiclib01 {
+    transition: transform .2s;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 1%;
+}
+
+.werewolflib01 .wepiclib01:hover {
+    transform: scale(1.1);
+}
+
+.werewolflib01 .bookinfo {
+    margin-left: 50px;
+    padding: 0;
+    min-width: max-content;  
+}
+
+.werewolflib01 .lang {
+    margin-bottom: 25px;
+}
+
+.werewolflib01 .Pform {
+    transform: trasform .2s;
+}
+
+.werewolflib01 .Pform:hover {
+    transform: scale(1.1);
+}
+
+.werewolflib02 {
+    display: flex;
+    margin-top: 100px;
+    margin-right: auto;
+    margin-left: auto;
+    flex-wrap: wrap; 
+    width: 70%; 
+}
+
+.werewolflib02 .wepiclib02 {
+    transition: transform .2s;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 1%;
+    padding-top: 1%;
+}
+
+.werewolflib02 .wepiclib02:hover {
+    transform: scale(1.1);
+}
+
+.werewolflib02 .bookinfo {
+    margin-left: 50px;
+    padding: 0;
+    min-width: max-content;  
+}
+
+.werewolflib02 .lang {
+    margin-bottom: 25px;
+}
+
+.werewolflib02 .Pform {
+    transform: trasform .2s;
+}
+
+.werewolflib02 .Pform:hover {
+    transform: scale(1.1);
+}
+
+.werewolflib01 .wepiclib01 .picceb02 {
+    border-radius: 10px;
+}
+
+.werewolflib02 .wepiclib02 .picceb02 {
+    border-radius: 10px;
+}
+
+/* About Author */
+.Author {
+    display: flex;
+    color: white;
+    margin-top: 8rem;
+    margin-left: auto;
+    margin-right: auto; 
+    flex-direction: column;
+          
+}
+
+.Author .authorpic  {
+    padding-right: 1.2rem;
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    
+      
+}
+
+.Author .authorpic .author{
+    max-width: 50%; 
+    max-height: 50%;
+    border-radius: 10px; 
+}
+
+.Author .message {
+    display: flex;
+    line-height: 2rem;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 90rem;
+    flex-wrap: wrap;      
+}
+
+.Author .fboxauthor {
+    width: 5rem;
+    flex-shrink: 15;
+}
+
+
+
+/* Preloader */
+#preloader {   
+    width: 50%;
+    height: 50%;
+    z-index: 1000;
+}
+
+/* Cursor */
+/* Start https://www.cursors-4u.com */ 
+* {cursor: url(https://cur.cursors-4u.net/cursors/cur-10/cur918.cur), auto !important;} 
+/* End https://www.cursors-4u.com */
+
+/* Tab and Mobile Resolution */
+
+/* 480 */
+@media screen and (max-width: 480px)
+{
+    h2 {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 2.2rem;
+        line-height: 4rem;
+        color: white;
+    }
+
+    h4 {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 1rem;
+        color: white;   
+        line-height: 1.5rem;   
+    }
+
+    p {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1rem;
+        color: white;
+        line-height: 2rem;
+    }
+
+/*Header*/
+    .menu01 {
+    display: none;
+    }
+
+    .menu02 {
+        display: block;
+    }
+
+    .menu02 .fbox2 {
+        width: 45%;
+        flex-shrink: 100;
+    }
+
+    .flex > div {
+        margin: 0rem 1rem 0rem 0rem;
+        flex-grow: 5;   
+    }
+
+    .flex .imgbox {
+        top: 0;
+        margin-left: 1%;
+    }
+
+    .flex .fbox1{
+        width: .1%;
+        flex-shrink: 100 ;
+    }
+/*CEBs02*/
+    .bookcategories .welcome {
+    flex-grow: 5;    
+    }
+
+    .bookcategories .ul {
+    flex-grow: 5;
+    }
+    
+    #backlink {
+    margin-top: 30%;
+    text-align: center;
+    display: block;
+    scale: 130%;
+    }
+
+    .youngadultlib01 {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .youngadultlib01 .yapiclib01 {
+        scale:80%;
+        
+    }
+
+    .youngadultlib02 {
+        flex-direction: column;
+        width: 100%; 
+        margin-top: 0%;
+    }
+
+    .youngadultlib02 .yapiclib02 {
+        scale:80%;
+    }
+    
+    .werewolflib01 {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .werewolflib01 .wepiclib01 {
+        scale: 80%;
+    }
+
+    .werewolflib02 {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 0%;
+    }
+    
+    .werewolflib02 .wepiclib02 {
+        scale: 80%;
+    }  
+    
+     /*CEBs03*/
+     .Author .message {
+        flex-grow: 5;
+    }
+
+}
+
+/* 481-800 */
+@media screen and (max-width: 800px) and (min-width: 481px)
+{
+    h2 {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 2.5rem;
+        line-height: 4rem;
+        color: white;
+    }
+
+    h4 {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 1rem;
+        color: white;   
+        line-height: 1.5rem;   
+    }
+
+    p {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1rem;
+        color: white;
+        line-height: 2rem;
+    }
+
+/*Header*/
+    .menu01 {
+    display: none;
+    }
+
+    .menu02 {
+        display: block;
+    }
+
+    .menu02 .fbox2 {
+        padding-right: 1rem;
+        width: 55%;
+        flex-shrink: 100;
+    }
+
+    .flex > div {
+        margin: 0rem 1rem 0rem 0rem;
+        flex-grow: 5;   
+    }
+
+    .flex .imgbox {
+        top: 0;
+        margin-left: 1%;
+    }
+
+    .flex .fbox1{
+        width: .1%;
+        flex-shrink: 100 ;
+    }
+/*CEBs02*/
+    .bookcategories .welcome {
+    max-width: 80%;
+    flex-grow: 5;    
+    }
+
+    .bookcategories .ul {
+    max-width: 80%;
+    flex-grow: 5;
+    }
+
+    #backlink {
+    margin-top: 20%;
+    text-align: center;
+    display: block;
+    scale: 110%;
+    }
+
+    .youngadultlib01 {
+      flex-direction: column;
+    }
+
+    .youngadultlib01 .yapiclib01 {
+        scale:90%;
+    }
+
+    .youngadultlib02 {
+      flex-direction: column; 
+      margin-top: 0%;
+    }
+
+    .youngadultlib02 .yapiclib02 {
+        scale:90%;
+    }
+    
+    .werewolflib01 {
+        flex-direction: column; 
+    }
+
+    .werewolflib01 .wepiclib01 {
+        scale: 90%;
+    }
+
+    .werewolflib02 {
+        flex-direction: column;
+        margin-top: 0%;
+    }
+    
+    .werewolflib02 .wepiclib02 {
+        scale: 90%;
+    } 
+    
+      /*CEBs03*/
+      .Author .message {
+        max-width: 85%;
+        flex-grow: 5;
+    }
+
+    /*Individual Books*/
+    .youngadult .yoflex .text{
+    max-width: 90%;
+    flex-grow: 5; 
+     }
+
+    .werewolf .weflex .text {
+    max-width: 90%;
+    flex-grow: 5;
+    }
+}
+
+/* 801-1030 */
+@media screen and (max-width: 1030px) and (min-width: 801px)
+{
+    h2 {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 2.7rem;
+        line-height: 4rem;
+        color: white;
+    }
+
+    h4 {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 1.3rem;
+        color: white;   
+        line-height: 1.5rem;   
+    }
+
+    p {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.3rem;
+        color: white;
+        line-height: 2rem;
+    }
+
+/*Header*/
+    .ulmenu{
+     display: none !important ;
+    }
+
+    .flex > div {
+        margin: 0rem 1rem 0rem -1rem;
+        flex-grow: 5;   
+    }
+
+    .flex .imgbox {
+        top: 0;
+        margin-left: 1%;
+    }
+
+    .flex .fbox1{
+        width: .1%;
+        flex-shrink: 100 ;
+    }
+
+    .flex .sel {
+        scale: 80%;     
+    }
+    
+    .flex .icon {
+        scale: 80%;  
+    }
+/*CEBs02*/
+    .bookcategories .welcome {
+    max-width: 80%;
+    flex-grow: 5;    
+    }
+
+    .bookcategories .ul {
+    max-width: 80%;
+    flex-grow: 5;
+    }
+
+    #backlink {
+    margin-top: 15%;
+    text-align: center;
+    display: block;
+    scale: 110%;
+    }
+
+    .youngadultlib01 {
+      flex-direction: column;
+    }
+
+    .youngadultlib01 .yapiclib01 {
+        scale:90%;
+    }
+
+    .youngadultlib02 {
+      flex-direction: column; 
+      margin-top: 0%;
+    }
+
+    .youngadultlib02 .yapiclib02 {
+        scale:90%;
+    }
+    
+    .werewolflib01 {
+        flex-direction: column; 
+    }
+
+    .werewolflib01 .wepiclib01 {
+        scale: 90%;
+    }
+
+    .werewolflib02 {
+        flex-direction: column;
+        margin-top: 0%;
+    }
+    
+    .werewolflib02 .wepiclib02 {
+        scale: 90%;
+    } 
+    
+    /*CEBs03*/
+    .Author .message {
+        max-width: 80%;
+        flex-grow: 5;
+    }
+
+/*Individual Books*/
+.youngadult .yoflex .text{
+        max-width: 90%;
+        flex-grow: 5; 
+    }
+
+.werewolf .weflex .text {
+        max-width: 90%;
+        flex-grow: 5;
+    }
+}
+
+/* 1031-1250 */
+@media screen and (max-width: 1250px) and (min-width: 1031px)
+{
+    h2 {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 2.8rem;
+        line-height: 4rem;
+        color: white;
+    }
+
+    h4 {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 1.5rem;
+        color: white;   
+        line-height: 2rem;   
+    }
+
+    p {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.5rem;
+        color: white;
+        line-height: 2rem;
+    }
+
+/*Header*/
+   .ulmenu{
+    display: none !important ;
+   }
+
+    .flex > div {
+        margin: 0rem 1rem 0rem 0rem;
+        flex-grow: 5;   
+    }
+
+    .flex .imgbox {
+        top: 0;
+        margin-left: 1%;
+    }
+
+    .flex .fbox1{
+        width: 1%;
+        flex-shrink: 100 ;
+    }
+
+    .flex .sel {
+        scale: 90%;     
+    }
+    
+    .flex .icon {
+        scale: 90%;  
+    }
+
+/*CEBs02*/
+    .bookcategories .welcome {
+        max-width: 80%;
+        flex-grow: 5;    
+    }
+
+    .bookcategories .ul {
+        max-width: 80%;
+        flex-grow: 5;
+    }
+
+    #backlink {
+        margin-top: 15%;
+        text-align: center;
+        display: block;
+        scale: 110%;
+    }
+
+    .youngadultlib01 {
+        flex-direction: column;
+    }
+
+    .youngadultlib01 .yapiclib01 {
+        scale:100%;
+    }
+
+    .youngadultlib02 {
+        flex-direction: column; 
+        margin-top: 0%;
+    }
+
+    .youngadultlib02 .yapiclib02 {
+        scale:100%;
+    }
+    
+    .werewolflib01 {
+        flex-direction: column; 
+    }
+
+    .werewolflib01 .wepiclib01 {
+        scale: 100%;
+    }
+
+    .werewolflib02 {
+        flex-direction: column;
+        margin-top: 0%;
+    }
+    
+    .werewolflib02 .wepiclib02 {
+        scale: 100%;
+    }
+    
+/*CEBs03*/
+    .Author .message {
+        max-width: 80%;
+        flex-grow: 5;
+    }
+
+/*Individual Books*/
+.youngadult .yoflex .text{
+        max-width: 90%;
+        flex-grow: 5; 
+    }
+
+.werewolf .weflex .text {
+        max-width: 90%;
+        flex-grow: 5;
+    }
+}
+
+
+/* 1251-1350 */
+@media screen and (max-width: 1350px) and (min-width: 1251px)
+{
+    h2 {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 2.8rem;
+        line-height: 4rem;
+        color: white;
+    }
+
+    h4 {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 1.5rem;
+        color: white;   
+        line-height: 2rem;   
+    }
+
+    p {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.5rem;
+        color: white;
+        line-height: 2rem;
+    }
+
+/*Header*/
+   .ulmenu{
+    display: none !important ;
+   }
+
+    .flex > div {
+        margin: 0rem 1rem 0rem 0rem;
+        flex-grow: 5;   
+    }
+
+    .flex .imgbox {
+        top: 0;
+        margin-left: 1%;
+    }
+
+    .flex .fbox1{
+        width: 1%;
+        flex-shrink: 100 ;
+    }
+
+    .flex .sel {
+        scale: 90%;     
+    }
+    
+    .flex .icon {
+        scale: 90%;  
+    }
+
+/*CEBs02*/
+    .bookcategories .welcome {
+        max-width: 75%;
+        flex-grow: 5;
+        margin-top: 35px;    
+    }
+
+    .bookcategories .ul {
+        max-width: 75%;
+        flex-grow: 5;
+    }
+
+    #backlink {
+        margin-top: 15%;
+        text-align: center;
+        display: block;
+        scale: 110%;
+    }
+
+    .youngadultlib01 {
+        width: 90%;   
+    }
+
+    .youngadultlib01 .yapiclib01 {
+        scale:100%;
+        padding-left: 1%;
+        padding-right: 0%;
+    }
+
+    .youngadultlib02 {
+        width: 90%;
+        margin-top: 0%;
+    }
+
+    .youngadultlib02 .yapiclib02 {
+        scale:100%;
+        padding-left: 1%;
+        padding-right: 0%;
+    }
+    
+    .werewolflib01 {
+        width: 90%;
+    }
+
+    .werewolflib01 .wepiclib01 {
+        scale: 100%;
+        padding-left: 1%;
+        padding-right: 0%;
+    }
+
+    .werewolflib02 {
+        width: 90%;
+        margin-top: 0%;
+    }
+    
+    .werewolflib02 .wepiclib02 {
+        scale: 100%;
+        padding-left: 1%;
+        padding-right: 0%;
+    }
+    
+/*CEBs03*/
+    .Author .message {
+        max-width: 75%;
+        flex-grow: 5;
+    }
+
+/*Individual Books*/
+.youngadult .yoflex .text{
+        max-width: 80%;
+        flex-grow: 5; 
+    }
+
+.werewolf .weflex .text {
+        max-width: 80%;
+        flex-grow: 5;
+    }
+}
+
+/* 1351-1449 */
+@media screen and (max-width: 1449px) and (min-width: 1351px)
+{
+    h2 {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 2.8rem;
+        line-height: 4rem;
+        color: white;
+    }
+
+    h4 {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 1.5rem;
+        color: white;   
+        line-height: 2rem;   
+    }
+
+    p {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.5rem;
+        color: white;
+        line-height: 2rem;
+    }
+
+/*Header*/
+   .ulmenu{
+    display: none !important ;
+   }
+
+    .flex > div {
+        margin: 0rem 1rem 0rem 0rem;
+        flex-grow: 5;   
+    }
+
+    .flex .imgbox {
+        top: 0;
+        margin-left: 1%;
+    }
+
+    .flex .fbox1{
+        width: 1%;
+        flex-shrink: 100 ;
+    }
+
+    .flex .sel {
+        scale: 90%;     
+    }
+    
+    .flex .icon {
+        scale: 90%;  
+    }
+
+/*CEBs02*/
+    .bookcategories .welcome {
+        max-width: 75%;
+        flex-grow: 5;
+        margin-top: 35px;    
+    }
+
+    .bookcategories .ul {
+        max-width: 75%;
+        flex-grow: 5;
+    }
+
+    #backlink {
+        margin-top: 15%;
+        text-align: center;
+        display: block;
+        scale: 110%;
+    }
+
+    .youngadultlib01 {
+        width: 85%;
+        scale: 100%;
+    }
+
+    .youngadultlib01 .yapiclib01 {
+        scale:100%;
+        padding-left: 1%;
+        padding-right: 0%;
+    }
+
+    .youngadultlib02 {
+        width: 85%;
+        margin-top: 0%;
+    }
+
+    .youngadultlib02 .yapiclib02 {
+        scale:100%;
+        padding-left: 1%;
+        padding-right: 0%;
+    }
+    
+    .werewolflib01 {
+        width: 85%;
+    }
+
+    .werewolflib01 .wepiclib01 {
+        scale: 100%;
+        padding-left: 1%;
+        padding-right: 0%;
+    }
+
+    .werewolflib02 {
+        width: 85%;
+        margin-top: 0%;
+    }
+    
+    .werewolflib02 .wepiclib02 {
+        scale: 100%;
+        padding-left: 1%;
+        padding-right: 0%;
+    }
+    
+/*CEBs03*/
+    .Author .message {
+        max-width: 75%;
+        flex-grow: 5;
+    }
+
+/*Individual Books*/
+.youngadult .yoflex .text{
+        max-width: 80%;
+        flex-grow: 5; 
+    }
+
+.werewolf .weflex .text {
+        max-width: 80%;
+        flex-grow: 5;
+    }
+}
+
+/* 1450-1549 */
+@media screen and (max-width: 1549px) and (min-width: 1450px)
+{
+    h2 {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 2.8rem;
+        line-height: 4rem;
+        color: white;
+    }
+
+    h4 {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 1.5rem;
+        color: white;   
+        line-height: 2rem;   
+    }
+
+    p {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.5rem;
+        color: white;
+        line-height: 2rem;
+    }
+
+/*Header*/
+   .ulmenu{
+    display: none !important ;
+   }
+
+    .flex > div {
+        margin: 0rem 1rem 0rem 0rem;
+        flex-grow: 5;   
+    }
+
+    .flex .imgbox {
+        top: 0;
+        margin-left: 1%;
+    }
+
+    .flex .fbox1{
+        width: 1%;
+        flex-shrink: 100 ;
+    }
+
+    .flex .sel {
+        scale: 90%;     
+    }
+    
+    .flex .icon {
+        scale: 90%;  
+    }
+
+/*CEBs02*/
+    .bookcategories .welcome {
+        max-width: 75%;
+        flex-grow: 5;
+        margin-top: 35px;    
+    }
+
+    .bookcategories .ul {
+        max-width: 75%;
+        flex-grow: 5;
+    }
+
+    #backlink {
+        margin-top: 15%;
+        text-align: center;
+        display: block;
+        scale: 110%;
+    }
+
+    .youngadultlib01 {
+        width: 80%;
+        
+    }
+
+    .youngadultlib01 .yapiclib01 {
+        scale:100%;
+        padding-left: 1%;
+        padding-right: 1%;
+    }
+
+    .youngadultlib02 {
+        width: 80%;
+        margin-top: 0%;
+    }
+
+    .youngadultlib02 .yapiclib02 {
+        scale:100%;
+        padding-left: 1%;
+        padding-right: 1%;
+    }
+    
+    .werewolflib01 {
+        width: 80%;
+    }
+
+    .werewolflib01 .wepiclib01 {
+        scale: 100%;
+        padding-left: 1%;
+        padding-right: 1%;
+    }
+
+    .werewolflib02 {
+        width: 80%;
+        margin-top: 0%;
+    }
+    
+    .werewolflib02 .wepiclib02 {
+        scale: 100%;
+        padding-left: 1%;
+        padding-right: 1%;
+    }
+    
+/*CEBs03*/
+    .Author .message {
+        max-width: 75%;
+        flex-grow: 5;
+    }
+
+/*Individual Books*/
+.youngadult .yoflex .text{
+        max-width: 80%;
+        flex-grow: 5; 
+    }
+
+.werewolf .weflex .text {
+        max-width: 80%;
+        flex-grow: 5;
+    }
+}
+
+/* 1550-1649 */
+@media screen and (max-width: 1649px) and (min-width: 1550px)
+{
+    h2 {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 2.8rem;
+        line-height: 4rem;
+        color: white;
+    }
+
+    h4 {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 1.5rem;
+        color: white;   
+        line-height: 2rem;   
+    }
+
+    p {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.5rem;
+        color: white;
+        line-height: 2rem;
+    }
+
+/*Header*/
+   .ulmenu{
+    display: none !important ;
+   }
+
+    .flex > div {
+        margin: 0rem 1rem 0rem 0rem;
+        flex-grow: 5;   
+    }
+
+    .flex .imgbox {
+        top: 0;
+        margin-left: 1%;
+    }
+
+    .flex .fbox1{
+        width: 1%;
+        flex-shrink: 100 ;
+    }
+
+    .flex .sel {
+        scale: 95%;     
+    }
+    
+    .flex .icon {
+        scale: 95%;  
+    }
+
+/*CEBs02*/
+    .bookcategories .welcome {
+        max-width: 70%;
+        flex-grow: 5;
+        margin-top: 35px;    
+    }
+
+    .bookcategories .ul {
+        max-width: 70%;
+        flex-grow: 5;
+    }
+
+    #backlink {
+        margin-top: 15%;
+        text-align: center;
+        display: block;
+        scale: 110%;
+    }
+
+    .youngadultlib01 {
+        width: 80%;
+        
+    }
+
+    .youngadultlib01 .yapiclib01 {
+        scale:100%;
+        padding-left: 2%;
+        padding-right: 2%;
+        
+    }
+
+    .youngadultlib02 {
+        width: 80%;
+        margin-top: 0%;
+    }
+
+    .youngadultlib02 .yapiclib02 {
+        scale:100%;
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+    
+    .werewolflib01 {
+        width: 80%;
+    }
+
+    .werewolflib01 .wepiclib01 {
+        scale: 100%;
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+
+    .werewolflib02 {
+        width: 80%;
+        margin-top: 0%;
+    }
+    
+    .werewolflib02 .wepiclib02 {
+        scale: 100%;
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+    
+/*CEBs03*/
+    .Author .message {
+        max-width: 75%;
+        flex-grow: 5;
+    }
+
+/*Individual Books*/
+.youngadult .yoflex .text{
+        max-width: 80%;
+        flex-grow: 5; 
+    }
+
+.werewolf .weflex .text {
+        max-width: 80%;
+        flex-grow: 5;
+    }
+}
+
+/* 1650-1749 */
+@media screen and (max-width: 1749px) and (min-width: 1650px)
+{
+    h2 {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 2.8rem;
+        line-height: 4rem;
+        color: white;
+    }
+
+    h4 {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 1.5rem;
+        color: white;   
+        line-height: 2rem;   
+    }
+
+    p {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.5rem;
+        color: white;
+        line-height: 2rem;
+    }
+
+/*Header*/
+   .ulmenu{
+    display: none !important ;
+   }
+
+    .flex > div {
+        margin: 0rem 1rem 0rem 0rem;
+        flex-grow: 5;   
+    }
+
+    .flex .imgbox {
+        top: 0;
+        margin-left: 1%;
+    }
+
+    .flex .fbox1{
+        width: 1%;
+        flex-shrink: 100 ;
+    }
+
+    .flex .sel {
+        scale: 95%;     
+    }
+    
+    .flex .icon {
+        scale: 95%;  
+    }
+
+/*CEBs02*/
+    .bookcategories .welcome {
+        max-width: 70%;
+        flex-grow: 5;
+        margin-top: 35px;    
+    }
+
+    .bookcategories .ul {
+        max-width: 70%;
+        flex-grow: 5;
+    }
+
+    #backlink {
+        margin-top: 15%;
+        text-align: center;
+        display: block;
+        scale: 110%;
+    }
+
+    .youngadultlib01 {
+        width: 80%;
+        
+    }
+
+    .youngadultlib01 .yapiclib01 {
+        scale:100%;
+        padding-left: 3%;
+        padding-right: 3%;
+        
+    }
+
+    .youngadultlib02 {
+        width: 80%;
+        margin-top: 0%;
+    }
+
+    .youngadultlib02 .yapiclib02 {
+        scale:100%;
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+    
+    .werewolflib01 {
+        width: 80%;
+    }
+
+    .werewolflib01 .wepiclib01 {
+        scale: 100%;
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+
+    .werewolflib02 {
+        width: 80%;
+        margin-top: 0%;
+    }
+    
+    .werewolflib02 .wepiclib02 {
+        scale: 100%;
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+    
+/*CEBs03*/
+    .Author .message {
+        max-width: 70%;
+        flex-grow: 5;
+    }
+
+/*Individual Books*/
+.youngadult .yoflex .text{
+        max-width: 80%;
+        flex-grow: 5; 
+    }
+
+.werewolf .weflex .text {
+        max-width: 80%;
+        flex-grow: 5;
+    }
+}
+
+/* 1750-1849 */
+@media screen and (max-width: 1849px) and (min-width: 1750px)
+{
+    h2 {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 2.8rem;
+        line-height: 4rem;
+        color: white;
+    }
+
+    h4 {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 1.5rem;
+        color: white;   
+        line-height: 2rem;   
+    }
+
+    p {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.5rem;
+        color: white;
+        line-height: 2rem;
+    }
+
+/*Header*/
+   .ulmenu{
+    display: none !important ;
+   }
+
+    .flex > div {
+        margin: 0rem 1rem 0rem 0rem;
+        flex-grow: 5;   
+    }
+
+    .flex .imgbox {
+        top: 0;
+        margin-left: 1%;
+    }
+
+    .flex .fbox1{
+        width: 1%;
+        flex-shrink: 100 ;
+    }
+
+    .flex .sel {
+        scale: 95%;     
+    }
+    
+    .flex .icon {
+        scale: 95%;  
+    }
+
+/*CEBs02*/
+    .bookcategories .welcome {
+        max-width: 70%;
+        flex-grow: 5;
+        margin-top: 35px;    
+    }
+
+    .bookcategories .ul {
+        max-width: 70%;
+        flex-grow: 5;
+    }
+
+    #backlink {
+        margin-top: 15%;
+        text-align: center;
+        display: block;
+        scale: 110%;
+    }
+
+    .youngadultlib01 {
+        width: 80%;
+        
+    }
+
+    .youngadultlib01 .yapiclib01 {
+        scale:100%;
+        padding-left: 4%;
+        padding-right: 4%;
+        
+    }
+
+    .youngadultlib02 {
+        width: 80%;
+        margin-top: 0%;
+    }
+
+    .youngadultlib02 .yapiclib02 {
+        scale:100%;
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+    
+    .werewolflib01 {
+        width: 80%;
+    }
+
+    .werewolflib01 .wepiclib01 {
+        scale: 100%;
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+
+    .werewolflib02 {
+        width: 80%;
+        margin-top: 0%;
+    }
+    
+    .werewolflib02 .wepiclib02 {
+        scale: 100%;
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+    
+/*CEBs03*/
+    .Author .message {
+        max-width: 70%;
+        flex-grow: 5;
+    }
+
+/*Individual Books*/
+.youngadult .yoflex .text{
+        max-width: 70%;
+        flex-grow: 5; 
+    }
+
+.werewolf .weflex .text {
+        max-width: 70%;
+        flex-grow: 5;
+    }
+}
+
+
+/* 1850-2000 */
+@media screen and (max-width: 2000px) and (min-width: 1850px)
+{
+    h2 {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 2.8rem;
+        line-height: 4rem;
+        color: white;
+    }
+
+    h4 {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 1.5rem;
+        color: white;   
+        line-height: 2rem;   
+    }
+
+    p {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.5rem;
+        color: white;
+        line-height: 2rem;
+    }
+
+/*Header*/
+   .ulmenu{
+    display: none !important ;
+   }
+
+    .flex > div {
+        margin: 0rem 1rem 0rem 0rem;
+        flex-grow: 5;   
+    }
+
+    .flex .imgbox {
+        top: 0;
+        margin-left: 1%;
+    }
+
+    .flex .fbox1{
+        width: 1%;
+        flex-shrink: 100 ;
+    }
+
+    .flex .sel {
+        scale: 95%;     
+    }
+    
+    .flex .icon {
+        scale: 95%;  
+    }
+
+/*CEBs02*/
+    .bookcategories .welcome {
+        max-width: 70%;
+        flex-grow: 5;
+        margin-top: 35px;    
+    }
+
+    .bookcategories .ul {
+        max-width: 70%;
+        flex-grow: 5;
+    }
+
+    #backlink {
+        margin-top: 15%;
+        text-align: center;
+        display: block;
+        scale: 110%;
+    }
+
+    .youngadultlib01 {
+        width: 80%;
+        scale: 100%;
+    }
+
+    .youngadultlib01 .yapiclib01 {
+        scale:100%;
+    }
+
+    .youngadultlib02 {
+        width: 80%;
+        margin-top: 0%;
+    }
+
+    .youngadultlib02 .yapiclib02 {
+        scale:100%;
+    }
+    
+    .werewolflib01 {
+        width: 80%;
+    }
+
+    .werewolflib01 .wepiclib01 {
+        scale: 100%;
+    }
+
+    .werewolflib02 {
+        width: 80%;
+        margin-top: 0%;
+    }
+    
+    .werewolflib02 .wepiclib02 {
+        scale: 100%;
+    }
+    
+/*CEBs03*/
+    .Author .message {
+        max-width: 70%;
+        flex-grow: 5;
+    }
+
+/*Individual Books*/
+.youngadult .yoflex .text{
+        max-width: 70%;
+        flex-grow: 5; 
+    }
+
+.werewolf .weflex .text {
+        max-width: 70%;
+        flex-grow: 5;
+    }
+}
+
+
+
+
+
+
+
+
+
+
